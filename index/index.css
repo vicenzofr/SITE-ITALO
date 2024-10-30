@@ -1,12 +1,11 @@
 body {
     margin: 0;
-    padding: 0;
 }
 
 .caixa {
     background-color: #182140;
     height: 100px; /* Altura da barra */
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center; /* Centraliza verticalmente os itens */
     position: sticky;
@@ -17,8 +16,6 @@ body {
 .scroll-active {
     background-color: #2a3b5a; /* Cor mais clara ao rolar */
 }
-
-
 
 .logo {
     height: 180px;
@@ -37,8 +34,7 @@ body {
     display: flex;
     gap: 30px; /* Espaço entre os links */
     padding-left: 700px;
-    margin-left: 20px;
-    
+    margin-left: 20px; 
 }
 
 .links a {
@@ -46,7 +42,6 @@ body {
     color: white;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 nav.links button {
@@ -67,7 +62,6 @@ nav.links button a {
     font-weight: bold;
     font-family: Arial, sans-serif;
     display: block; /* Faz o link ocupar todo o botão */
- 
 }
 
 nav.links button:hover{
@@ -81,48 +75,51 @@ nav.links button:hover a{
 }
 
 .video{
-    width: 100vw;
+    width: 100%;
     height: 700px;
 }
 
-
-.sobremim {
-    display: flex; /* Usando flexbox para alinhar os filhos em linha */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: auto; /* Altura automática para que se ajuste ao conteúdo */
-    margin-top: 100px;
+.sobremim{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: flex-start;
+    display: flex;               
     flex-direction: column; 
 }
 
-.quadrado {
-    background-color: transparent;
-    width: 500px;
-    height: auto; /* Deixe a altura automática para permitir o ajuste do conteúdo */
-    color: black;
-    margin: 150px; /* Margem em todos os lados (incluindo a parte superior) */
-    border-radius: 20px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    border: 5px solid black;
-    
+.italo{
+    margin-top: 100px;    /* Margem na parte superior (ajuste conforme necessário) */
+    margin-bottom: 20px;
+    margin-left: 300px;
 }
 
-.quadrado h1 {
-    margin: 0; /* Remove a margem padrão do h1 */
-    font-size: 1.4rem; /* Ajusta o tamanho da fonte conforme necessário */
-    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+._{
+    margin-bottom: 10px;
+    margin-left: 300px;
+    margin-top: -10px;
 }
 
-.fotosobremim {
-    width: 500px;
-    height: 400px;
-    margin: 20px; /* Margem em todos os lados (incluindo a parte superior) */
-    border-radius: 20px;
+.textsobre{
+    margin-left: 300px;
+    text-align: justify;
+    max-width: 600px;
+    margin-top: -200px;
+    margin-right: 20px;        
 }
 
-h1 {
-    margin-bottom: 20px; /* Margem abaixo do H1 para espaçamento com os outros elementos */
-    font-family: Arial, Helvetica, sans-serif;
+.fotosobre {
+    width: 700px;              /* Ajuste a largura conforme necessário */
+    height: auto;              /* Altura automática para manter a proporção */
+    margin-left: 100px;         /* Margem à esquerda para espaçamento em relação ao texto */
+    margin-top: -80px;
+}
+
+.text-e-imagem {
+    display: flex;              
+    align-items: center;        
 }
 
 .conteudo {
@@ -130,4 +127,10 @@ h1 {
     justify-content: center; /* Centraliza os itens horizontalmente */
     align-items: flex-start; /* Alinha itens ao topo */
     margin-top: 20px; /* Espaço entre o título e o conteúdo */
+}
+
+.areas{
+    width: 100%;
+    height: 700px;
+    background-color:gray;
 }
