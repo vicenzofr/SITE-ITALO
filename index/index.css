@@ -10,7 +10,7 @@ body {
     align-items: center; /* Centraliza verticalmente os itens */
     position: sticky;
     top: 0;
-    transition: background-color 0.3s ease; /* Animação suave */
+    transition: background-color 0.1s ease; /* Animação suave */
 }
 
 .scroll-active {
@@ -67,7 +67,7 @@ nav.links button a {
 nav.links button:hover{
     background-color: white;
     color:  black;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 
 nav.links button:hover a{
