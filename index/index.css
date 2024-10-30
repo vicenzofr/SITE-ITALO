@@ -9,11 +9,20 @@ body {
     width: 100vw;
     display: flex;
     align-items: center; /* Centraliza verticalmente os itens */
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease; /* Animação suave */
 }
 
+.scroll-active {
+    background-color: #2a3b5a; /* Cor mais clara ao rolar */
+}
+
+
+
 .logo {
-    height: 170px;
-    width: 240px;
+    height: 180px;
+    width: 260px;
     margin-top:15px;
     margin-left: 1px;  /* Margem à esquerda da imagem */
 }
@@ -26,36 +35,55 @@ body {
 
 .links {
     display: flex;
-    gap: 80px; /* Espaço entre os links */
+    gap: 30px; /* Espaço entre os links */
+    padding-left: 700px;
+    margin-left: 20px;
+    
 }
 
 .links a {
     text-decoration: none;  
     color: white;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-nav.links{
-    height: 80px;
-    width: 190px;
+nav.links button {
     background-color: transparent;
     border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 200px;
+    height: 70px;
+    margin-top: 2px;
+    color: white;
 }
 
+/* Estilo para os links dentro dos botões */
+nav.links button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: block; /* Faz o link ocupar todo o botão */
+ 
+}
 
+nav.links button:hover{
+    background-color: white;
+    color:  black;
+    transition-duration: 1s;
+}
 
-.links a:hover {
-    color: rgb(187, 185, 185); 
-    font-size: 1.7rem;
+nav.links button:hover a{
+    color: black;
 }
 
 .video{
     width: 100vw;
     height: 700px;
 }
-
 
 
 .sobremim {
