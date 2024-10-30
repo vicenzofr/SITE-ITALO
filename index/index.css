@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.caixa {
+    background-color: #182140;
+    height: 100px; /* Altura da barra */
+    width: 100vw;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.logo {
+    height: 170px;
+    width: 240px;
+    margin-top:15px;
+    margin-left: 1px;  /* Margem à esquerda da imagem */
+}
+
+.dlink {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-grow: 1; /* Permite que a div ocupe o espaço restante */
+}
+
+.links {
+    display: flex;
+    gap: 80px; /* Espaço entre os links */
+}
+
+.links a {
+    text-decoration: none;  
+    color: white;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav.links{
+    height: 80px;
+    width: 190px;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.links a:hover {
+    color: rgb(187, 185, 185); 
+    font-size: 1.7rem;
+}
+
+.video{
+    width: 100vw;
+    height: 700px;
+}
+
+
+
+.sobremim {
+    display: flex; /* Usando flexbox para alinhar os filhos em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: auto; /* Altura automática para que se ajuste ao conteúdo */
+    margin-top: 100px;
+    flex-direction: column; 
+}
+
+.quadrado {
+    background-color: transparent;
+    width: 500px;
+    height: auto; /* Deixe a altura automática para permitir o ajuste do conteúdo */
+    color: black;
+    margin: 150px; /* Margem em todos os lados (incluindo a parte superior) */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    border: 5px solid black;
+    
+}
+
+.quadrado h1 {
+    margin: 0; /* Remove a margem padrão do h1 */
+    font-size: 1.4rem; /* Ajusta o tamanho da fonte conforme necessário */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+}
+
+.fotosobremim {
+    width: 500px;
+    height: 400px;
+    margin: 20px; /* Margem em todos os lados (incluindo a parte superior) */
+    border-radius: 20px;
+}
+
+h1 {
+    margin-bottom: 20px; /* Margem abaixo do H1 para espaçamento com os outros elementos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo {
+    display: flex; /* Coloca o quadrado e a imagem lado a lado */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start; /* Alinha itens ao topo */
+    margin-top: 20px; /* Espaço entre o título e o conteúdo */
+}
