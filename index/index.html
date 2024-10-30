@@ -12,16 +12,16 @@
         <img src="../image/logo.png" alt="logo" class="logo">
             <div class="dlink">
                 <nav class="links">
-                        <button class="sobre"> <a href="">SOBRE MIM</a> </button> 
-                        <button class="areas">  <a href="">ÁREAS DE ATUAÇÃO</a> </button>
-                        <button class="cont">   <a href="">CONTATOS</a> </button>
+                        <button class="sobre"> <a href="#sobre">SOBRE MIM</a> </button> 
+                        <button class="areas">  <a href="#areas">ÁREAS DE ATUAÇÃO</a> </button>
+                        <button class="cont">   <a href="#areas">CONTATOS</a> </button>
                 </nav>
             </div>       
     </div>
 
-    <video src="../image/video.mp4" controls class="video"> </video>
+    <video src="../image/video.mp4" loop autoplay muted class="video"></video>
 
-    <div class="sobremim">
+    <div class="sobremim" id="sobre">
         <h1 class="italo">ITALO DE OLIVEIRA</h1>
         <p class="_">________</p>
         <div class="text-e-imagem">
@@ -31,7 +31,7 @@
        
     </div>
     
-    <div class="areas">
+    <div class="areas" id="areas">
         <h1 class="areastrabalho">ÁREAS DE TRABALHO</h1>
         <p class="one">________</p>
         <p class="conheca">Conheça as principais áreas de atuação do nosso escritório.</p>
@@ -60,6 +60,45 @@
         </div>
     </div>
 
+    <div class="contato" id="contato">
+        <h1 class="cont">CONTATOS</h1>
+        <div class="contato-container">
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3835.165997403935!2d-41.282478999999995!3d-16.004871999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDAwJzE3LjUiUyA0McKwMTYnNTYuOSJX!5e0!3m2!1sen!2sbr!4v1730307178275!5m2!1sen!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="social-links">
+                <button class="wh">
+                    <a href="https://wa.me/553391450002" class="whatsapp">
+                        <img src="../image/whatsapp.png" alt="WhatsApp logo">
+                        <p>+55 (33) 9145-0002</p>
+                    </a>
+                </button>
+                
+                <button class="ins">
+                    <a href="https://www.instagram.com/italoribeiro.adv?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="instagram">
+                        <img src="..//image/instagram.png" alt="instagram logo">
+                        <p>italoribeiro.adv</p>
+                    </a>
+                </button>
+              
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 | <a href="mailto:vicenzo@gmail.com">vicenzofr@gmail.com</a> | <p> Desenvolvido por: Vicenzo</p></p>
+    </footer>
+    
+    
     <script src="index.js"></script>
+
+    
 </body>
 </html>
