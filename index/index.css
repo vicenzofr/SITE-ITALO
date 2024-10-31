@@ -226,14 +226,17 @@ nav.links button:hover a{
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
     gap: 50px;                /* Espaçamento entre mapa e redes sociais */
-    align-items: center;
+    /*align-items: center;*/
     margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .maps {
     width: 600px;
     height: 450px;
     margin-top: 10px;
+    
 }
 
 .social-links {
@@ -241,46 +244,6 @@ nav.links button:hover a{
     flex-direction: column;
     gap: 20px;  /* Espaçamento entre WhatsApp e Instagram */
 }
-
-.whatsapp, .instagram {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-.whatsapp img, .instagram img {
-    width: 60px;
-    margin-right: 10px; /* Espaço entre imagem e texto */
-}
-
-.whatsapp p, .instagram p {
-    font-size: 30px;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
- .wh, .ins{
-    background-color: transparent;
-    border: none;
-}
-
-.wh:hover, .ins:hover{
-    background-color: white;
-    opacity: 40;
-    border: none;
-    border-radius: 10px;
-}
-
-
-.whatsapp:hover, .instagram:hover{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}
-
 footer {
     display: flex;
     justify-content: center;
@@ -303,6 +266,80 @@ footer a:hover {
 }
 
 /*so pra testar*/
+/* From Uiverse.io by Yaya12085 */ 
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 270px;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 270px;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+  }
 
+  .whats, .instagram    {
+    height: auto;
+    width: 40px;
+    margin-top: 30px;
+  }
+
+  .imgform {
+    display: flex;
+    align-items: center; /* opcional, para alinhar verticalmente */
+  }
+  
+  .whats, .instagram {
+    height: auto;
+    width: 40px;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  
 
 
