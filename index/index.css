@@ -16,8 +16,7 @@ html{
     align-items: center; /* Centraliza verticalmente os itens */
     position: sticky;
     top: 0;
-    transition: background-color 0.1s ease; /* Animação suave */
-    
+    transition: background-color 0.1s ease; /* Animação suave */  
 }
 
 .scroll-active {
@@ -62,7 +61,6 @@ nav.links button {
     color: white;
 }
 
-/* Estilo para os links dentro dos botões */
 nav.links button a {
     text-decoration: none;
     color: white;
@@ -99,7 +97,7 @@ nav.links button:hover a{
 }
 
 .italo{
-    margin-top: 270px;    /* Margem na parte superior (ajuste conforme necessário) */
+    margin-top: 270px;    
     margin-bottom: 20px;
     margin-left: 300px;
 }

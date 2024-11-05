@@ -1,1 +1,1 @@
-window.alert("Bem-vindo ao ADV ITALO");
+window.alert("Bem-vindo ao Italo ADV");
