@@ -3,6 +3,8 @@ body {
     height: 400vh;
     width: 100%;
     overflow-x: hidden;
+    position: relative;
+    z-index: 0;
 
 }
 
@@ -118,11 +120,10 @@ nav.links button:hover a{
     height: 120px;
     width: 33%;
 }
-
-.imgescritorio, .start, .whass {
-    height: 50px;
-    width: 50px;
-    margin-bottom: 2px;
+i {
+    font-size: 35px;
+    color: white;
+    margin: 10px;
 }
 
 .item h2, .item h1 {
@@ -294,6 +295,7 @@ nav.links button:hover a{
     align-items: flex-start;
 }
 
+/* Estilo do contêiner maps */
 .maps {
     width: 600px;
     height: 450px;
@@ -301,7 +303,34 @@ nav.links button:hover a{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: visible; /* Permite que a imagem saia do contêiner sem ser cortada */
+    position: relative;
+    z-index: 10;
+    background-color: #1b213a;
 }
+
+/* Estilo da imagem escrit-1 */
+.escrit-1 {
+    width: 240px;
+    height: auto;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.5s ease, transform 0.5s ease, width 0.3s ease; /* Suaviza a transição de todos os efeitos */
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%); /* Centraliza inicialmente */
+    z-index: 20; /* Garante que a imagem esteja acima do .maps */
+}
+
+/* Efeito ao passar o mouse sobre o .maps */
+.maps:hover .escrit-1 {
+    opacity: 1; /* Torna a imagem visível */
+    width: 300px;
+    transform: translateX(450px); /* Move para o lado esquerdo */
+}
+
+
+
 
 .social-links {
     display: flex;
